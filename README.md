@@ -1,6 +1,5 @@
-# distrocards
 ![distrocards-logo](assets/distrocards.png)
-A simple JS card game.
+**A simple JS card game about GNU/Linux distros. Licensed with GPLv3.**
 
 ![distrocards](screenshot2.png)
 
