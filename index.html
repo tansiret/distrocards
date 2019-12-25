@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
 
   <title>DistroCards</title>
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="stylesheet/styles.css">
   <link rel="shortcut icon" href="assets/favicon.png">
 </head>
+
 <body>
-  <section class="memory-game animated fadeInDown">
+  <section id="Page1" class="play-screen animated fadeInDown">
+    <div><img class="logo" src="assets/distrocards.svg" alt="DistroCards"></div>
+    <a class="button" href="#" onclick="return show('Page2','Page1');">Play</a>
+    </br>
+    <a class="button" id="about">About</a>
+    </br>
+    <a class="button" id="quit-game"">Quit</a>
+    <p class=" copyleft">Copyleft 2019 Mercode Foundation. - GPLv3</br>Made with love by Yutyo.</p>
+  </section>
+  <section id="Page2" class="memory-game animated fadeInDown">
     <div class="memory-card" data-distro="archlinux">
       <img class="front-face" id="arch" src="assets/archlinux.svg" alt="Arch Linux" />
       <img class="back-face" src="assets/tux.svg" id="Tux" />
@@ -117,7 +128,8 @@
       <img class="back-face" src="assets/tux.svg" alt="Tux" />
     </div>
   </section>
-
+  
   <script src="script.js"></script>
 </body>
+
 </html>

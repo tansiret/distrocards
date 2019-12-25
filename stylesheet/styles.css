@@ -1,22 +1,76 @@
 @import "animate.css";
+@import "fonts.css";
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 body {
+  font-family: 'reelwey';
   height: 100vh;
   display: flex;
   background: #616161;
+  overflow: hidden;
+}
+
+.play-screen {
+  width: 580px;
+  height: 580px;
+  margin: auto;
+  display: block;
+  text-align: center;
+  border-radius: 24px;
+  background: rgba(0,0,0,.2);
+  box-shadow: 4px 4px 4px rgba(0,0,0,.7);
+}
+.logo {
+  width: 85%;
+  height: auto;
+}
+a.button {
+  border-color: #212121;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 22px;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: #212121;
+  background: none;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  width: 150px;
+  font-size: 18px;
+  margin: 20px 20px;
+}
+
+a.button:hover {
+  font-size: 20px;
+  color: #f5f5f5;
+  background: #212121;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.7);
+  border: none;
+  transition: all 0.2s linear;
+}
+.copyleft {
+  position: absolute;
+  text-align: left;
+  font-size: 13px;
+  bottom: 50px;
+  left: inherit;
+  right: inherit;
+  color: #212121;
 }
 
 .memory-game {
   width: 580px;
   height: 580px;
   margin: auto;
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   perspective: 1000px;
 }
@@ -49,7 +103,7 @@ body {
   border-radius: 8px;
   background: #212121;
   backface-visibility: hidden;
-  box-shadow: 1px 1px 1px rgba(0,0,0,.5);
+  box-shadow: 2px 2px 2px rgba(0,0,0,.5);
 }
 
 .front-face {

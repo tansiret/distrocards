@@ -8,7 +8,7 @@ const url = require("url");
 
 let win;
  function createWindow() {
-   win = new BrowserWindow({width: 590, height: 590, minWidth: 450, minHeight: 580, icon: path.join(__dirname + '/assets/icon.png')});
+   win = new BrowserWindow({width: 600, height: 620, minWidth: 450, minHeight: 580, icon: path.join(__dirname + '/assets/icon.png')});
    win.loadURL(url.format({
      pathname: path.join(__dirname, 'index.html'),
      protocol: 'file',
@@ -28,6 +28,7 @@ let win;
    }
  })
 
- electron.app.on('browser-window-created',function(e,window) {
-     window.setMenu(null);
- });
+ 
+ //electron.app.on('browser-window-created',function(e,window) {
+  //   window.setMenu(null);
+ //});
