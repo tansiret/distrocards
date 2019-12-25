@@ -1,5 +1,7 @@
 # distrocards
+![distrocards-logo](assets/distrocards.svg)
 A simple JS card game.
+
 ![distrocards](screenshot1.png)
 
 ## Installation
