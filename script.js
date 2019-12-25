@@ -11,17 +11,18 @@ function flipCard() {
   this.classList.add('flip');
 
   if (!hasFlippedCard) {
-    // first click
+
     hasFlippedCard = true;
     firstCard = this;
 
     return;
   }
 
-  // second click
+
   secondCard = this;
 
   checkForMatch();
+  console.log(firstCard, secondCard);
 }
 
 function checkForMatch() {
@@ -39,11 +40,9 @@ function disableCards() {
 
 function unflipCards() {
   lockBoard = true;
-
   setTimeout(() => {
     firstCard.classList.remove('flip');
     secondCard.classList.remove('flip');
-
     resetBoard();
   }, 1500);
 }

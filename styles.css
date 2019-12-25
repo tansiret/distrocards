@@ -1,3 +1,4 @@
+@import "animate.css";
 * {
   padding: 0;
   margin: 0;
@@ -11,8 +12,8 @@ body {
 }
 
 .memory-game {
-  width: 640px;
-  height: 640px;
+  width: 580px;
+  height: 580px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -20,14 +21,13 @@ body {
 }
 
 .memory-card {
-  width: calc(25% - 10px);
-  height: calc(33.333% - 10px);
-  margin: 5px;
+  width: calc(16.666% - 5px);
+  height: calc(25% - 5px);
+  margin: 2px;
   position: relative;
   transform: scale(1);
   transform-style: preserve-3d;
   transition: transform .5s;
-  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }
 
 .memory-card:active {
@@ -45,9 +45,10 @@ body {
   height: 100%;
   padding: 20px;
   position: absolute;
-  border-radius: 5px;
+  border-radius: 8px;
   background: #212121;
   backface-visibility: hidden;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.5);
 }
 
 .front-face {
@@ -71,4 +72,31 @@ body {
 }
 #arch {
   background: #1793d1;
+}
+#nixos{
+  background: #5074be;
+}
+#pardus {
+  background: #ffcc00;
+}
+#manjaro {
+  background: #0d5f4f;
+}
+#kali {
+  background: #447490;
+}
+#suse {
+  background: #02d35f;
+}
+#centos {
+  background: #AA00FF;
+}
+#redhat {
+  background: #e00;
+}
+#redstar {
+  background: #f42427;
+}
+#gentoo {
+  background: #463c65;
 }
