@@ -1,6 +1,6 @@
 # distrocards
 A simple JS card game.
-![distrocards](screenshot.png)
+![distrocards](screenshot1.png)
 
 ## Installation
 Install dependencies.
