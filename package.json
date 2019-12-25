@@ -1,6 +1,7 @@
 {
   "name": "distrocards",
   "version": "1.2.0",
+  "description": "A simple JS card game about GNU/Linux distros.",
   "main": "main.js",
   "devDependencies": {
     "electron": "^7.1.7"

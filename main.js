@@ -1,5 +1,5 @@
-console.log('main project working');
-
+console.log('DistroCards - A simple JS card game about GNU/Linux distros.');
+console.log('Made by Yutyo. (https://github.com/yutyo)')
 const electron = require("electron");
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
@@ -8,7 +8,7 @@ const url = require("url");
 
 let win;
  function createWindow() {
-   win = new BrowserWindow({width: 590, height: 590, minWidth: 450, icon: path.join(__dirname + '/assets/icon.png')});
+   win = new BrowserWindow({width: 590, height: 590, minWidth: 450, minHeight: 580, icon: path.join(__dirname + '/assets/icon.png')});
    win.loadURL(url.format({
      pathname: path.join(__dirname, 'index.html'),
      protocol: 'file',
@@ -27,6 +27,7 @@ let win;
      createWindow()
    }
  })
+
  electron.app.on('browser-window-created',function(e,window) {
      window.setMenu(null);
  });
