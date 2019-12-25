@@ -1,8 +1,8 @@
 # distrocards
-![distrocards-logo](assets/distrocards.svg)
+![distrocards-logo](assets/distrocards.png)
 A simple JS card game.
 
-![distrocards](screenshot1.png)
+![distrocards](screenshot2.png)
 
 ## Installation
 Install dependencies.
@@ -14,3 +14,4 @@ Start the app.
 ```
 npm start
 ```
+![distrocards](screenshot1.png)
