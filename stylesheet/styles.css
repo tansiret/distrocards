@@ -112,8 +112,8 @@ a.button:hover {
 }
 
 .memory-card-easy {
-  width: calc(25% - 10px);
-  height: calc(35% - 10px);
+  width: calc(25% - 7px);
+  height: calc(35% - 7px);
   margin: 3px;
   position: relative;
   transform: scale(1);
