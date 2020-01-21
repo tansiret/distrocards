@@ -61,14 +61,20 @@ function resetBoard() {
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
-function show(shown, hidden) {
+function showmenu(shown, hidden) {
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hidden).style.display='none';
+  return false;
+}
+
+function showgame(shown, hidden) {
   document.getElementById(shown).style.display='flex';
   document.getElementById(hidden).style.display='none';
   return false;
 }
 
 document.getElementById("about").addEventListener("click", function(){
-  alert("DistroCards v.1.3.0\nCopyleft 2019 Mercode - GPLv3\nMade with love by Yutyo");
+  alert("DistroCards v.1.4.0\nCopyleft 2019 Mercode - GPLv3\nMade with love by Yutyo");
 });
 
 document.getElementById("quit-game").addEventListener("click", function(){
