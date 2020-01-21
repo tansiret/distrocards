@@ -24,11 +24,28 @@ body {
   background: rgba(0,0,0,.2);
   box-shadow: 4px 4px 4px rgba(0,0,0,.7);
 }
+.select-screen {
+  width: 580px;
+  height: 580px;
+  margin: auto;
+  display: none;
+  text-align: center;
+  border-radius: 24px;
+  background: rgba(0,0,0,.2);
+  box-shadow: 4px 4px 4px rgba(0,0,0,.7);
+}
 .logo {
   width: 85%;
   height: auto;
 }
+h3 {
+  font-family: 'cardfont';
+  font-size: 70px;
+  font-weight: 400;
+  color: #212121;
+}
 a.button {
+  font-family: 'cardfont';
   border-color: #212121;
   border-style: solid;
   border-width: 2px;
@@ -44,29 +61,30 @@ a.button {
   font-weight: bold;
   text-decoration: none;
   width: 150px;
-  font-size: 18px;
+  font-size: 28px;
   margin: 20px 20px;
 }
 
 a.button:hover {
-  font-size: 20px;
+  font-size: 35px;
   color: #f5f5f5;
   background: #212121;
   box-shadow: 1px 1px 1px rgba(0,0,0,.7);
   border: none;
+  padding: 6px;
   transition: all 0.2s linear;
 }
 .copyleft {
   position: absolute;
-  text-align: left;
+  text-align: center;
   font-size: 13px;
   bottom: 50px;
-  left: inherit;
-  right: inherit;
+  left: 20%;
+  right: 20%;
   color: #212121;
 }
 
-.memory-game {
+.memory-game-easy {
   width: 580px;
   height: 580px;
   margin: auto;
@@ -75,9 +93,47 @@ a.button:hover {
   perspective: 1000px;
 }
 
-.memory-card {
+.memory-game-medium {
+  width: 580px;
+  height: 580px;
+  margin: auto;
+  display: none;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.memory-game-hard {
+  width: 580px;
+  height: 580px;
+  margin: auto;
+  display: none;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.memory-card-easy {
+  width: calc(25% - 10px);
+  height: calc(35% - 10px);
+  margin: 3px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+
+.memory-card-medium {
   width: calc(16.666% - 5px);
   height: calc(25% - 5px);
+  margin: 2px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+
+.memory-card-hard {
+  width: calc(12.333% - 5px);
+  height: calc(17% - 5px);
   margin: 2px;
   position: relative;
   transform: scale(1);
@@ -113,8 +169,12 @@ a.button:hover {
 #ubuntu {
   background: #E95420;
 }
+#ubuntumate {
+  background: #87a556;
+}
 #meros {
   background: #ff6600;
+  background: linear-gradient(45deg, rgba(255, 29, 17, 0.9), rgba(255, 162, 6, 0.9));
 }
 #mint {
   background: #469408;
@@ -124,6 +184,9 @@ a.button:hover {
 }
 #debian {
   background: #D70A53;
+}
+#raspbian {
+  background: #c51a4a;
 }
 #arch {
   background: #1793d1;
@@ -154,4 +217,29 @@ a.button:hover {
 }
 #gentoo {
   background: #463c65;
+}
+#mx {
+  background: #000;
+}
+#pisilinux {
+  background: #D9005B;
+}
+#nodeos {
+  background: #254567;
+}
+#solus {
+  background: #5294E2;
+}
+#linuxlite {
+  background: #ffe082;
+}
+#mageia {
+  background: #262f45;
+}
+#steamos {
+  background: rgb(157,43,203);
+  background: linear-gradient(184deg, rgba(157,43,203,1) 0%, rgba(216,209,230,1) 100%);
+}
+#sulinos {
+  background: #9C27B0;
 }

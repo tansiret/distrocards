@@ -12,123 +12,410 @@
 
 <body>
   <section id="Page1" class="play-screen animated fadeInDown">
-    <div><img class="logo" src="assets/distrocards.svg" alt="DistroCards"></div>
-    <a class="button" href="#" onclick="return show('Page2','Page1');">Play</a>
+    <div><img class="logo" src="assets/distrocards.png" alt="DistroCards"></div>
+    <a class="button" href="#" onclick="return showmenu('Page2','Page1');">Play</a>
     </br>
     <a class="button" id="about">About</a>
     </br>
-    <a class="button" id="quit-game"">Quit</a>
-    <p class=" copyleft">Copyleft 2019 Mercode Foundation. - GPLv3</br>Made with love by Yutyo.</p>
+    <a class="button" id="quit-game">Quit</a>
+    <p class=" copyleft">Copyleft 2019-2020 Mercode Foundation. - GPLv3</br>Made with love by Yutyo.</p>
   </section>
-  <section id="Page2" class="memory-game animated fadeInDown">
-    <div class="memory-card" data-distro="archlinux">
+
+  <section id="Page2" class="select-screen animated fadeIn">
+    <div><img class="logo" src="assets/distrocards.png" alt="DistroCards"></div>
+    <h3>Select Difficulty</h3>
+    <a class="button" href="#" onclick="return showgame('Page3','Page2');">Easy</a>
+    </br>
+    <a class="button" href="#" onclick="return showgame('Page4','Page2');">Medium</a>
+    </br>
+    <a class="button" href="#" onclick="return showgame('Page5','Page2');">Hard</a>
+    </br>
+    <a class="button" href="#" onclick="return showmenu('Page1','Page2');">Back</a>
+  </section>
+
+  <section id="Page3" class="memory-game-easy animated fadeInDown">
+    <div class="memory-card memory-card-easy" data-distro="archlinux">
       <img class="front-face" id="arch" src="assets/archlinux.svg" alt="Arch Linux" />
       <img class="back-face" src="assets/tux.svg" id="Tux" />
     </div>
-    <div class="memory-card" data-distro="archlinux">
+    <div class="memory-card memory-card-easy" data-distro="archlinux">
       <img class="front-face" id="arch" src="assets/archlinux.svg" alt="Arch Linux" />
       <img class="back-face" src="assets/tux.svg" alt="Tux" />
     </div>
 
-    <div class="memory-card" data-distro="debian">
+    <div class="memory-card memory-card-easy" data-distro="debian">
       <img class="front-face" id="debian" src="assets/debian.svg" alt="Debian" />
       <img class="back-face" src="assets/tux.svg" alt="Tux" />
     </div>
-    <div class="memory-card" data-distro="debian">
+    <div class="memory-card memory-card-easy" data-distro="debian">
       <img class="front-face" id="debian" src="assets/debian.svg" alt="Debian" />
       <img class="back-face" src="assets/tux.svg" alt="Tux" />
     </div>
 
-    <div class="memory-card" data-distro="fedora">
+    <div class="memory-card memory-card-easy" data-distro="fedora">
       <img class="front-face" id="fedora" src="assets/fedora.svg" alt="Fedora" />
       <img class="back-face" src="assets/tux.svg" alt="Tux" />
     </div>
-    <div class="memory-card" data-distro="fedora">
+    <div class="memory-card memory-card-easy" data-distro="fedora">
       <img class="front-face" id="fedora" src="assets/fedora.svg" alt="Fedora" />
       <img class="back-face" src="assets/tux.svg" alt="Tux" />
     </div>
 
-    <div class="memory-card" data-distro="linuxmint">
+    <div class="memory-card memory-card-easy" data-distro="linuxmint">
       <img class="front-face" id="mint" src="assets/linuxmint.svg" alt="Linux Mint" />
       <img class="back-face" src="assets/tux.svg" alt="Tux" />
     </div>
-    <div class="memory-card" data-distro="linuxmint">
+    <div class="memory-card memory-card-easy" data-distro="linuxmint">
       <img class="front-face" id="mint" src="assets/linuxmint.svg" alt="Linux Mint" />
       <img class="back-face" src="assets/tux.svg" alt="Tux" />
     </div>
 
-    <div class="memory-card" data-distro="meros">
+    <div class="memory-card memory-card-easy" data-distro="meros">
       <img class="front-face" id="meros" src="assets/meros.svg" alt="MerOS" />
       <img class="back-face" src="assets/tux.svg" alt="Tux" />
     </div>
-    <div class="memory-card" data-distro="meros">
+    <div class="memory-card memory-card-easy" data-distro="meros">
       <img class="front-face" id="meros" src="assets/meros.svg" alt="MerOS" />
       <img class="back-face" src="assets/tux.svg" alt="Tux" />
     </div>
 
-    <div class="memory-card" data-distro="ubuntu">
+    <div class="memory-card memory-card-easy" data-distro="ubuntu">
       <img class="front-face" id="ubuntu" src="assets/ubuntu.svg" alt="Ubuntu" />
       <img class="back-face" src="assets/tux.svg" alt="Tux" />
     </div>
-    <div class="memory-card" data-distro="ubuntu">
+    <div class="memory-card memory-card-easy" data-distro="ubuntu">
       <img class="front-face" id="ubuntu" src="assets/ubuntu.svg" alt="Ubuntu" />
       <img class="back-face" src="assets/tux.svg" alt="Tux" />
     </div>
-    <div class="memory-card" data-distro="nixos">
+  </section>
+
+  <section id="Page4" class="memory-game-medium animated fadeInDown">
+    <div class="memory-card memory-card-medium" data-distro="archlinux">
+      <img class="front-face" id="arch" src="assets/archlinux.svg" alt="Arch Linux" />
+      <img class="back-face" src="assets/tux.svg" id="Tux" />
+    </div>
+    <div class="memory-card memory-card-medium" data-distro="archlinux">
+      <img class="front-face" id="arch" src="assets/archlinux.svg" alt="Arch Linux" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-medium" data-distro="debian">
+      <img class="front-face" id="debian" src="assets/debian.svg" alt="Debian" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+    <div class="memory-card memory-card-medium" data-distro="debian">
+      <img class="front-face" id="debian" src="assets/debian.svg" alt="Debian" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-medium" data-distro="fedora">
+      <img class="front-face" id="fedora" src="assets/fedora.svg" alt="Fedora" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+    <div class="memory-card memory-card-medium" data-distro="fedora">
+      <img class="front-face" id="fedora" src="assets/fedora.svg" alt="Fedora" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-medium" data-distro="linuxmint">
+      <img class="front-face" id="mint" src="assets/linuxmint.svg" alt="Linux Mint" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+    <div class="memory-card memory-card-medium" data-distro="linuxmint">
+      <img class="front-face" id="mint" src="assets/linuxmint.svg" alt="Linux Mint" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-medium" data-distro="meros">
+      <img class="front-face" id="meros" src="assets/meros.svg" alt="MerOS" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+    <div class="memory-card memory-card-medium" data-distro="meros">
+      <img class="front-face" id="meros" src="assets/meros.svg" alt="MerOS" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-medium" data-distro="ubuntu">
+      <img class="front-face" id="ubuntu" src="assets/ubuntu.svg" alt="Ubuntu" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+    <div class="memory-card memory-card-medium" data-distro="ubuntu">
+      <img class="front-face" id="ubuntu" src="assets/ubuntu.svg" alt="Ubuntu" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+    <div class="memory-card memory-card-medium" data-distro="nixos">
       <img class="front-face" id="nixos" src="assets/nixos.svg" alt="NixOS" />
       <img class="back-face" src="assets/tux.svg" id="Tux" />
     </div>
-    <div class="memory-card" data-distro="nixos">
+    <div class="memory-card memory-card-medium" data-distro="nixos">
       <img class="front-face" id="nixos" src="assets/nixos.svg" alt="NixOS" />
       <img class="back-face" src="assets/tux.svg" alt="Tux" />
     </div>
 
-    <div class="memory-card" data-distro="pardus">
+    <div class="memory-card memory-card-medium" data-distro="pardus">
       <img class="front-face" id="pardus" src="assets/pardus.svg" alt="Pardus" />
       <img class="back-face" src="assets/tux.svg" alt="Tux" />
     </div>
-    <div class="memory-card" data-distro="pardus">
+    <div class="memory-card memory-card-medium" data-distro="pardus">
       <img class="front-face" id="pardus" src="assets/pardus.svg" alt="Pardus" />
       <img class="back-face" src="assets/tux.svg" alt="Tux" />
     </div>
 
-    <div class="memory-card" data-distro="manjaro">
+    <div class="memory-card memory-card-medium" data-distro="manjaro">
       <img class="front-face" id="manjaro" src="assets/manjaro.svg" alt="Fedora" />
       <img class="back-face" src="assets/tux.svg" alt="Tux" />
     </div>
-    <div class="memory-card" data-distro="manjaro">
+    <div class="memory-card memory-card-medium" data-distro="manjaro">
       <img class="front-face" id="manjaro" src="assets/manjaro.svg" alt="Fedora" />
       <img class="back-face" src="assets/tux.svg" alt="Tux" />
     </div>
 
-    <div class="memory-card" data-distro="opensuse">
+    <div class="memory-card memory-card-medium" data-distro="opensuse">
       <img class="front-face" id="suse" src="assets/opensuse.svg" alt="OpenSUSE" />
       <img class="back-face" src="assets/tux.svg" alt="Tux" />
     </div>
-    <div class="memory-card" data-distro="opensuse">
+    <div class="memory-card memory-card-medium" data-distro="opensuse">
       <img class="front-face" id="suse" src="assets/opensuse.svg" alt="OpenSUSE" />
       <img class="back-face" src="assets/tux.svg" alt="Tux" />
     </div>
 
-    <div class="memory-card" data-distro="gentoo">
+    <div class="memory-card memory-card-medium" data-distro="gentoo">
       <img class="front-face" id="gentoo" src="assets/gentoo.svg" alt="Gentoo" />
       <img class="back-face" src="assets/tux.svg" alt="Tux" />
     </div>
-    <div class="memory-card" data-distro="gentoo">
+    <div class="memory-card memory-card-medium" data-distro="gentoo">
       <img class="front-face" id="gentoo" src="assets/gentoo.svg" alt="Gentoo" />
       <img class="back-face" src="assets/tux.svg" alt="Tux" />
     </div>
 
-    <div class="memory-card" data-distro="redhat">
+    <div class="memory-card memory-card-medium" data-distro="redhat">
       <img class="front-face" id="redhat" src="assets/redhat.svg" alt="Redhat" />
       <img class="back-face" src="assets/tux.svg" alt="Tux" />
     </div>
-    <div class="memory-card" data-distro="redhat">
+    <div class="memory-card memory-card-medium" data-distro="redhat">
       <img class="front-face" id="redhat" src="assets/redhat.svg" alt="Redhat" />
       <img class="back-face" src="assets/tux.svg" alt="Tux" />
     </div>
   </section>
-  
+
+  <section id="Page5" class="memory-game-hard animated fadeInDown">
+    <div class="memory-card memory-card-hard" data-distro="archlinux">
+      <img class="front-face" id="arch" src="assets/archlinux.svg" alt="Arch Linux" />
+      <img class="back-face" src="assets/tux.svg" id="Tux" />
+    </div>
+    <div class="memory-card memory-card-hard" data-distro="archlinux">
+      <img class="front-face" id="arch" src="assets/archlinux.svg" alt="Arch Linux" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-hard" data-distro="debian">
+      <img class="front-face" id="debian" src="assets/debian.svg" alt="Debian" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+    <div class="memory-card memory-card-hard" data-distro="debian">
+      <img class="front-face" id="debian" src="assets/debian.svg" alt="Debian" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-hard" data-distro="fedora">
+      <img class="front-face" id="fedora" src="assets/fedora.svg" alt="Fedora" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+    <div class="memory-card memory-card-hard" data-distro="fedora">
+      <img class="front-face" id="fedora" src="assets/fedora.svg" alt="Fedora" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-hard" data-distro="linuxmint">
+      <img class="front-face" id="mint" src="assets/linuxmint.svg" alt="Linux Mint" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+    <div class="memory-card memory-card-hard" data-distro="linuxmint">
+      <img class="front-face" id="mint" src="assets/linuxmint.svg" alt="Linux Mint" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-hard" data-distro="meros">
+      <img class="front-face" id="meros" src="assets/meros.svg" alt="MerOS" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+    <div class="memory-card memory-card-hard" data-distro="meros">
+      <img class="front-face" id="meros" src="assets/meros.svg" alt="MerOS" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-hard" data-distro="ubuntu">
+      <img class="front-face" id="ubuntu" src="assets/ubuntu.svg" alt="Ubuntu" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+    <div class="memory-card memory-card-hard" data-distro="ubuntu">
+      <img class="front-face" id="ubuntu" src="assets/ubuntu.svg" alt="Ubuntu" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+    <div class="memory-card memory-card-hard" data-distro="nixos">
+      <img class="front-face" id="nixos" src="assets/nixos.svg" alt="NixOS" />
+      <img class="back-face" src="assets/tux.svg" id="Tux" />
+    </div>
+    <div class="memory-card memory-card-hard" data-distro="nixos">
+      <img class="front-face" id="nixos" src="assets/nixos.svg" alt="NixOS" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-hard" data-distro="pardus">
+      <img class="front-face" id="pardus" src="assets/pardus.svg" alt="Pardus" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+    <div class="memory-card memory-card-hard" data-distro="pardus">
+      <img class="front-face" id="pardus" src="assets/pardus.svg" alt="Pardus" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-hard" data-distro="manjaro">
+      <img class="front-face" id="manjaro" src="assets/manjaro.svg" alt="Fedora" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+    <div class="memory-card memory-card-hard" data-distro="manjaro">
+      <img class="front-face" id="manjaro" src="assets/manjaro.svg" alt="Fedora" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-hard" data-distro="opensuse">
+      <img class="front-face" id="suse" src="assets/opensuse.svg" alt="OpenSUSE" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+    <div class="memory-card memory-card-hard" data-distro="opensuse">
+      <img class="front-face" id="suse" src="assets/opensuse.svg" alt="OpenSUSE" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-hard" data-distro="gentoo">
+      <img class="front-face" id="gentoo" src="assets/gentoo.svg" alt="Gentoo" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+    <div class="memory-card memory-card-hard" data-distro="gentoo">
+      <img class="front-face" id="gentoo" src="assets/gentoo.svg" alt="Gentoo" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-hard" data-distro="redhat">
+      <img class="front-face" id="redhat" src="assets/redhat.svg" alt="Redhat" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+    <div class="memory-card memory-card-hard" data-distro="redhat">
+      <img class="front-face" id="redhat" src="assets/redhat.svg" alt="Redhat" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-hard" data-distro="redstar">
+      <img class="front-face" id="redstar" src="assets/redstar.svg" alt="RedStar" />
+      <img class="back-face" src="assets/tux.svg" id="Tux" />
+    </div>
+    <div class="memory-card memory-card-hard" data-distro="redstar">
+      <img class="front-face" id="redstar" src="assets/redstar.svg" alt="RedStar" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-hard" data-distro="raspbian">
+      <img class="front-face" id="raspbian" src="assets/raspbian.svg" alt="Raspbian" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+    <div class="memory-card memory-card-hard" data-distro="raspbian">
+      <img class="front-face" id="raspbian" src="assets/raspbian.svg" alt="Raspbian" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-hard" data-distro="centos">
+      <img class="front-face" id="centos" src="assets/centos.svg" alt="Centos" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+    <div class="memory-card memory-card-hard" data-distro="centos">
+      <img class="front-face" id="centos" src="assets/centos.svg" alt="Centos" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-hard" data-distro="mxlinux">
+      <img class="front-face" id="mxlinux" src="assets/mxlinux.svg" alt="MX Linux" />
+      <img class="back-face" src="assets/tux.svg" id="Tux" />
+    </div>
+    <div class="memory-card memory-card-hard" data-distro="mxlinux">
+      <img class="front-face" id="mxlinux" src="assets/mxlinux.svg" alt="MX Linux" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-hard" data-distro="solus">
+      <img class="front-face" id="solus" src="assets/solus.svg" alt="Solus" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+    <div class="memory-card memory-card-hard" data-distro="solus">
+      <img class="front-face" id="solus" src="assets/solus.svg" alt="Solus" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-hard" data-distro="ubuntumate">
+      <img class="front-face" id="ubuntumate" src="assets/ubuntumate.svg" alt="Ubuntu Mate" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+    <div class="memory-card memory-card-hard" data-distro="ubuntumate">
+      <img class="front-face" id="ubuntumate" src="assets/ubuntumate.svg" alt="Ubuntu Mate" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-hard" data-distro="nodeos">
+      <img class="front-face" id="nodeos" src="assets/nodeos.svg" alt="Node OS" />
+      <img class="back-face" src="assets/tux.svg" id="Tux" />
+    </div>
+    <div class="memory-card memory-card-hard" data-distro="nodeos">
+      <img class="front-face" id="nodeos" src="assets/nodeos.svg" alt="Node OS" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-hard" data-distro="pisilinux">
+      <img class="front-face" id="pisilinux" src="assets/pisilinux.svg" alt="Pisi Linux" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+    <div class="memory-card memory-card-hard" data-distro="pisilinux">
+      <img class="front-face" id="pisilinux" src="assets/pisilinux.svg" alt="Pisi Linux" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-hard" data-distro="linuxlite">
+      <img class="front-face" id="linuxlite" src="assets/linuxlite.svg" alt="linuxlite" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+    <div class="memory-card memory-card-hard" data-distro="linuxlite">
+      <img class="front-face" id="linuxlite" src="assets/linuxlite.svg" alt="linuxlite" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-hard" data-distro="mageia">
+      <img class="front-face" id="mageia" src="assets/mageia.svg" alt="Mageia" />
+      <img class="back-face" src="assets/tux.svg" id="Tux" />
+    </div>
+    <div class="memory-card memory-card-hard" data-distro="mageia">
+      <img class="front-face" id="mageia" src="assets/mageia.svg" alt="Mageia" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-hard" data-distro="steamos">
+      <img class="front-face" id="steamos" src="assets/steamos.svg" alt="SteamOS" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+    <div class="memory-card memory-card-hard" data-distro="steamos">
+      <img class="front-face" id="steamos" src="assets/steamos.svg" alt="SteamOS" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+    <div class="memory-card memory-card-hard" data-distro="sulinos">
+      <img class="front-face" id="sulinos" src="assets/sulinos.svg" alt="SulinOS" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+    <div class="memory-card memory-card-hard" data-distro="sulinos">
+      <img class="front-face" id="sulinos" src="assets/sulinos.svg" alt="SulinOS" />
+      <img class="back-face" src="assets/tux.svg" alt="Tux" />
+    </div>
+
+  </section>
+
   <script src="script.js"></script>
 </body>
 
