@@ -37,6 +37,7 @@ body {
 .logo {
   width: 85%;
   height: auto;
+  padding-top: 10px;
 }
 h3 {
   font-family: 'cardfont';
