@@ -10,6 +10,7 @@
   },
   "scripts": {
     "start": "electron ."
+    "nixstart": "nix run nixpkgs.electron_6 -c electron ."
   },
   "launcher": {
     "title": "distrocards",

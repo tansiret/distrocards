@@ -45,7 +45,7 @@ npm start
 
 for NixOS/MerOS:
 ```
-nix run nixpkgs.electron_6 -c electron .
+npm run nixstart
 ```
 
 
